@@ -173,7 +173,7 @@ class TableQueryBuilder(QueryBuilder):
 		self.vars.update({column: f"is.{val}"})
 		return self
 
-	def _in(self, column, vals):
+	def _in(self, column, val):
 		"""
 		Finds all rows whose value on the stated `column` is found on the
         specified `vals`.
